@@ -108,3 +108,35 @@ footer a {
     text-shadow: 1px 1px 1px black;
     text-decoration: none;
 }
+
+.pantalla {
+    color: white;
+    background-color: rgb(31, 31, 31);
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 230px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+#pantalla-2 {
+    padding: 0;
+    overflow: hidden;
+}
+
+#pantalla-2 img {
+    width: 100%;
+    height: auto;
+    top: -100px;
+    position: relative;
+}
+
+.no-disponible {
+    display: none;
+}
+
+#controles {
+    display: none;
+}
