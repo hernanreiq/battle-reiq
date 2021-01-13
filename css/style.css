@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Hind+Vadodara:wght@300&family=Nanum+Pen+Script&family=PT+Sans+Caption&family=Shadows+Into+Light+Two&display=swap');
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px 0px;
+    height: auto;
+    background-color: red;
+}
+
+header h1,
+header h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+header h1 {
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+header h2 {
+    letter-spacing: 2px;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+main {
+    height: 700px;
+    background-color: black;
+}
+
+div.anuncios {
+    height: 100px;
+    background: #FF0000;
+    background: -moz-linear-gradient(top, #FF0000 0%, #530000 50%, #000000 100%);
+    background: -webkit-linear-gradient(top, #FF0000 0%, #530000 50%, #000000 100%);
+    background: linear-gradient(to bottom, #FF0000 0%, #530000 50%, #000000 100%);
+}
+
+div.pantalla-juego {
+    height: 550px;
+    background-color: white;
+    border-radius: 20px;
+    border: black solid 3px;
+}
+
+div.controles {
+    height: 50px;
+    text-align: center;
+    background: #000000;
+    background: -moz-linear-gradient(top, #000000 0%, #4E0000 50%, #FF0000 100%);
+    background: -webkit-linear-gradient(top, #000000 0%, #4E0000 50%, #FF0000 100%);
+    background: linear-gradient(to bottom, #000000 0%, #4E0000 50%, #FF0000 100%);
+}
+
+p {
+    font-family: 'Calistoga', cursive;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+    background-color: white;
+    border: red solid 2px;
+    border-radius: 5px;
+    margin: 8px;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+button:hover {
+    color: white;
+    border: solid 2px white;
+    background-color: red;
+    cursor: pointer;
+}
+
+footer {
+    font-family: 'Calistoga', cursive;
+    text-align: center;
+    padding: 20px 0px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    background-color: red;
+    letter-spacing: 1px;
+}
+
+footer a {
+    color: gold;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+}
