@@ -17,6 +17,7 @@ html {
 body {
     width: 1000px;
     margin: 0 auto;
+    background-color: rgb(36, 36, 36);
 }
 
 header {
@@ -59,6 +60,10 @@ div.anuncios p {
     font-size: 20px;
     letter-spacing: 1px;
     color: rgb(128, 255, 145);
+}
+
+#alerta {
+    color: rgb(255, 230, 0);
 }
 
 div.pantalla-juego {
@@ -137,6 +142,10 @@ footer a {
     position: relative;
 }
 
+#pantalla-3 {
+    background-color: rgb(31, 31, 31);
+}
+
 #pantalla-2 img.fondo {
     width: 100%;
     height: auto;
@@ -152,6 +161,10 @@ footer a {
     display: none;
 }
 
+.controles-inactivos {
+    pointer-events: none;
+}
+
 #personaje,
 #oponente {
     z-index: 1;
@@ -165,9 +178,17 @@ footer a {
     left: 250px;
 }
 
+.personaje-ataca {
+    animation: personaje-ataca 5s ease;
+}
+
 #oponente {
     bottom: 3px;
     right: 250px;
+}
+
+.oponente-ataca {
+    animation: oponente-ataca 5s ease;
 }
 
 div.estatus {
@@ -175,6 +196,7 @@ div.estatus {
     z-index: 1;
     background-color: black;
     padding: 10px;
+    width: 200px;
 }
 
 div.estatus h2 {
@@ -196,4 +218,78 @@ div.derecha {
     border-radius: 0px 0px 0px 25px;
     right: 0;
     text-align: left;
+}
+
+@keyframes personaje-ataca {
+    10% {
+        left: 350px;
+    }
+    25% {
+        z-index: 2;
+        left: 450px;
+    }
+    40% {
+        bottom: 50px;
+        transform: rotate(25deg);
+        left: 450px;
+        z-index: 2;
+    }
+    60% {
+        bottom: 20px;
+        transform: rotate(15deg);
+        left: 400px;
+        z-index: 2;
+    }
+    80% {
+        bottom: 170px;
+        transform: rotate(50deg);
+        left: 430px;
+        z-index: 2;
+    }
+    90% {
+        left: 450px;
+        bottom: 3px;
+        z-index: 2;
+    }
+    100% {
+        left: 350px;
+        bottom: 3px;
+    }
+}
+
+@keyframes oponente-ataca {
+    10% {
+        right: 350px;
+    }
+    25% {
+        z-index: 2;
+        right: 450px;
+    }
+    40% {
+        bottom: 50px;
+        transform: rotate(-25deg);
+        right: 450px;
+        z-index: 2;
+    }
+    60% {
+        bottom: 20px;
+        transform: rotate(-15deg);
+        right: 400px;
+        z-index: 2;
+    }
+    80% {
+        bottom: 170px;
+        transform: rotate(-50deg);
+        right: 430px;
+        z-index: 2;
+    }
+    90% {
+        right: 450px;
+        bottom: 3px;
+        z-index: 2;
+    }
+    100% {
+        left: 350px;
+        bottom: 3px;
+    }
 }

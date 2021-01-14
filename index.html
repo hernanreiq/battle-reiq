@@ -20,7 +20,8 @@
     <main>
         <section>
             <div class="anuncios">
-                <!-- <p>Acabas de usar una navaja</p> -->
+                <p id="alerta"></p>
+                <p id="anuncios"></p>
             </div>
             <div class="pantalla-juego">
                 <div id="pantalla-1" class="pantalla "></div>
@@ -28,22 +29,25 @@
                     <div class="estatus izquierda">
                         <h2>Tú</h2>
                         <p>Salud: <span id="salud-personaje">100</span></p>
-                        <p>Ataque: <span id="ataque-personaje">3</span></p>
-                        <p>Defensa: <span id="defensa-personaje">30</span></p>
+                        <p>Fuerza: <span id="fuerza-personaje">3</span></p>
                     </div>
                     <div class="estatus derecha">
                         <h2>Oponente</h2>
                         <p>Salud: <span id="salud-oponente">100</span></p>
-                        <p>Ataque: <span id="ataque-oponente">3</span></p>
-                        <p>Defensa: <span id="defensa-oponente">30</span></p>
+                        <p>Fuerza: <span id="fuerza-oponente">3</span></p>
                     </div>
                     <img src="img/personaje.png" id="personaje">
                     <img src="img/oponente.png" id="oponente">
                     <img src="img/fondo-pelea.jpg" class="fondo">
                 </div>
+                <div id="pantalla-3" class="pantalla  no-disponible">
+                    <h2 id="mensaje-final"></h2>
+                </div>
             </div>
             <div class="controles" id="controles">
                 <button id="atacar">Atacar <i class="fas fa-hand-rock"></i></button>
+                <button id="aumentar-fuerza">Amentar Fuerza <i class="fas fa-fist-raised"></i></button>
+                <button id="aumentar-salud">Aumentar Salud <i class="fas fa-heartbeat"></i></button>
                 <button id="rendirse">Rendirse <i class="fas fa-running"></i></button>
             </div>
         </section>
