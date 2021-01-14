@@ -6,35 +6,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Poké-Reiq</title>
+    <title>Battle-Reiq</title>
 </head>
 
 <body>
     <header>
-        <h1>Poké-Reiq</h1>
-        <h2>Simulación de una batalla Pokémon</h2>
+        <h1>Battle-Reiq</h1>
+        <h2>Simulador de batalla</h2>
         <audio controls autoplay loop id="musica">
             <source src="" type="audio/mpeg">
         </audio>
     </header>
     <main>
         <section>
-            <div class="anuncios"></div>
+            <div class="anuncios">
+                <!-- <p>Acabas de usar una navaja</p> -->
+            </div>
             <div class="pantalla-juego">
-                <div id="pantalla-1" class="pantalla"></div>
+                <div id="pantalla-1" class="pantalla "></div>
                 <div id="pantalla-2" class="pantalla no-disponible">
-                    <img src="img/fondo-pelea.jpg" alt="">
+                    <div class="estatus izquierda">
+                        <h2>Tú</h2>
+                        <p>Salud: <span id="salud-personaje">100</span></p>
+                        <p>Ataque: <span id="ataque-personaje">3</span></p>
+                        <p>Defensa: <span id="defensa-personaje">30</span></p>
+                    </div>
+                    <div class="estatus derecha">
+                        <h2>Oponente</h2>
+                        <p>Salud: <span id="salud-oponente">100</span></p>
+                        <p>Ataque: <span id="ataque-oponente">3</span></p>
+                        <p>Defensa: <span id="defensa-oponente">30</span></p>
+                    </div>
+                    <img src="img/personaje.png" id="personaje">
+                    <img src="img/oponente.png" id="oponente">
+                    <img src="img/fondo-pelea.jpg" class="fondo">
                 </div>
             </div>
             <div class="controles" id="controles">
                 <button id="atacar">Atacar <i class="fas fa-hand-rock"></i></button>
-                <button id="cambiar">Cambiar Pokémon <i class="fas fa-sync-alt"></i></button>
-                <button id="huir">Huir <i class="fas fa-running"></i></button>
+                <button id="rendirse">Rendirse <i class="fas fa-running"></i></button>
             </div>
         </section>
     </main>
     <footer>
-        Versión de Pokémon sin fines de lucro. <br> Desarrollo y diseño web por: <a href="https://bit.ly/hernanreiq" target="_blank">Hernan.Reiq</a>
+        Desarrollo y diseño web hecho por: <a href="https://bit.ly/hernanreiq" target="_blank">Hernan.Reiq <i class="fas fa-external-link-alt"></i></a>
     </footer>
     <script src="js/primera-pantalla.js"></script>
 </body>
