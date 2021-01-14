@@ -9,7 +9,7 @@ var alerta = document.getElementById('alerta');
 /* CONFIGURACION INICIAL DE LA MUSICA DEL JUEGO */
 var musica = document.getElementById('musica');
 musica.src = "audio/musica.mp3";
-musica.volume = 0.01;
+musica.volume = 0.15;
 musica.style.display = "none";
 
 /* MENSAJE PANTALLA DE INICIO */
