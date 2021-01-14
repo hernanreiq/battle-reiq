@@ -221,7 +221,7 @@ var mensajes_oponente = [
 ];
 
 var mensajes_personaje = [
-    'Estas atacando',
+    'Estás atacando',
     'Has aumentado tu fuerza',
     'Has recuperado tu salud',
     'Tu ataque falló'
