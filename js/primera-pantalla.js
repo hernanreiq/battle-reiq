@@ -229,7 +229,7 @@ var mensajes_personaje = [
 
 /* ACCIONES DEL OPONENTE */
 function accionesOponente() {
-    if (oponente.salud <= 25) {
+    if (oponente.salud <= 28) {
         oponente.aumentarSalud();
     } else {
         accionesPredeterminadas();
